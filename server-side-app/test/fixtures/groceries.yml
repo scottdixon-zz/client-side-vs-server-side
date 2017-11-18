@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item: MyString
+  qty: 1
+  purchased: false
+
+two:
+  item: MyString
+  qty: 1
+  purchased: false
