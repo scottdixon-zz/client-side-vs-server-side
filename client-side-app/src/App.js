@@ -4,7 +4,7 @@ import GroceryForm from './components/GroceryForm';
 import axios from 'axios';
 
 class App extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       showGroceryForm: false,
@@ -47,7 +47,7 @@ class App extends Component {
     this.setState({ groceries })
     axios.put(`http://localhost:3001/groceries/${id}.json`, groceries[itemIndex])
   }
-  render() {
+  render () {
     return (
       <div className="App">
         <h1>Groceries</h1>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class GroceryForm extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       item: '',
@@ -15,7 +15,7 @@ class GroceryForm extends Component {
     event.preventDefault();
     this.props.onSubmit(this.state);
   }
-  handleInputChange(event) {
+  handleInputChange (event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
@@ -24,7 +24,7 @@ class GroceryForm extends Component {
       [name]: value
     });
   }
-  render() {
+  render () {
     return (
     <form onSubmit={this.handleSubmit}>
 

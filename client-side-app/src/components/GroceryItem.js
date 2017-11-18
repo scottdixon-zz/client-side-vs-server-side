@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class GroceryItem extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.handleDestroy = this.handleDestroy.bind(this)
     this.handleUpdatePurchased = this.handleUpdatePurchased.bind(this)
